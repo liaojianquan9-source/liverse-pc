@@ -1,0 +1,37 @@
+[
+  {
+    "id": "gal-001",
+    "src": "https://images.unsplash.com/photo-1516450360452-9312f5e86fc7?w=1200&h=675&fit=crop",
+    "alt": "Liverse Hall 场馆外观",
+    "caption": "场馆外观 — 现代建筑风格",
+    "category": "场馆外景"
+  },
+  {
+    "id": "gal-002",
+    "src": "https://images.unsplash.com/photo-1506157786151-b8491531f063?w=1200&h=675&fit=crop",
+    "alt": "Liverse Hall 主舞台",
+    "caption": "主舞台 — 专业灯光与音响系统",
+    "category": "舞台"
+  },
+  {
+    "id": "gal-003",
+    "src": "https://images.unsplash.com/photo-1540039155733-5bb30b53aa14?w=1200&h=675&fit=crop",
+    "alt": "Liverse Hall 观众席",
+    "caption": "观众席 — 沉浸式观演体验",
+    "category": "观众席"
+  },
+  {
+    "id": "gal-004",
+    "src": "https://images.unsplash.com/photo-1429962714451-bb934ecdc4ec?w=1200&h=675&fit=crop",
+    "alt": "Liverse Hall 演出实况",
+    "caption": "演出实况 — 热烈的现场氛围",
+    "category": "演出"
+  },
+  {
+    "id": "gal-005",
+    "src": "https://images.unsplash.com/photo-1492684223066-81342ee5ff30?w=1200&h=675&fit=crop",
+    "alt": "Liverse Hall 入口大厅",
+    "caption": "入口大厅 — 宽敞明亮的公共空间",
+    "category": "公共区域"
+  }
+]

@@ -1,0 +1,32 @@
+[
+  {
+    "id": "gal-001",
+    "src": "https://images.unsplash.com/photo-1514320291840-2e0a9bf2a9ae?w=1200&h=675&fit=crop",
+    "alt": "场馆外观",
+    "caption": "Liverse Hall 外观夜景"
+  },
+  {
+    "id": "gal-002",
+    "src": "https://images.unsplash.com/photo-1501386761578-eac5c94b800a?w=1200&h=675&fit=crop",
+    "alt": "主厅演出",
+    "caption": "主厅演出现场"
+  },
+  {
+    "id": "gal-003",
+    "src": "https://images.unsplash.com/photo-1470225620780-dba8ba36b745?w=1200&h=675&fit=crop",
+    "alt": "灯光系统",
+    "caption": "智能灯光系统"
+  },
+  {
+    "id": "gal-004",
+    "src": "https://images.unsplash.com/photo-1493225457124-a3eb161ffa5f?w=1200&h=675&fit=crop",
+    "alt": "观众视角",
+    "caption": "观众席视角"
+  },
+  {
+    "id": "gal-005",
+    "src": "https://images.unsplash.com/photo-1510915361894-db8b60106cb1?w=1200&h=675&fit=crop",
+    "alt": "后台区域",
+    "caption": "艺人后台休息区"
+  }
+]
