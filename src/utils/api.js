@@ -1,4 +1,5 @@
-const API_BASE = '/api'
+const BASE_URL = import.meta.env.BASE_URL
+const API_BASE = `${BASE_URL}api`
 
 async function fetchWithFallback(url, fallbackUrl) {
   try {
@@ -13,11 +14,11 @@ async function fetchWithFallback(url, fallbackUrl) {
 }
 
 export async function fetchEvents() {
-  return fetchWithFallback(`${API_BASE}/events.php`, '/data/events.json')
+  return fetchWithFallback(`${API_BASE}/events.php`, `${BASE_URL}data/events.json`)
 }
 
 export async function fetchGallery() {
-  return fetchWithFallback(`${API_BASE}/gallery.php`, '/data/gallery.json')
+  return fetchWithFallback(`${API_BASE}/gallery.php`, `${BASE_URL}data/gallery.json`)
 }
 
 export async function submitContact(formData) {

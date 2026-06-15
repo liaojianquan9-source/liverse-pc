@@ -380,6 +380,7 @@ const pagedHotels = computed(() => {
   display: flex;
   align-items: center;
   justify-content: center;
+  border: 1px solid var(--border-subtle);
 }
 .plan-image img {
   width: 100%;
@@ -387,6 +388,7 @@ const pagedHotels = computed(() => {
   max-height: 500px;
   object-fit: contain;
   display: block;
+  box-shadow: 0 4px 24px rgba(0, 0, 0, 0.08);
 }
 .plan-desc {
   font-size: 13px;

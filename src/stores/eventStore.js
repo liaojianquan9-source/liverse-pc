@@ -1,5 +1,6 @@
 import { defineStore } from 'pinia'
 import { fetchEvents as apiFetchEvents, fetchGallery as apiFetchGallery } from '../utils/api.js'
+import { getPublicAssetUrl } from '../utils/assets.js'
 
 function isValidArray(val) {
   return Array.isArray(val) && val.length > 0
@@ -63,7 +64,7 @@ export const useEventStore = defineStore('events', {
           localStorage.setItem(cacheTimeKey, now.toString())
         } else {
           // fallback: 读取本地 JSON
-          const res = await fetch('/data/events.json')
+          const res = await fetch(getPublicAssetUrl('data/events.json'))
           if (res.ok) {
             const fallback = await res.json()
             if (isValidArray(fallback)) {
@@ -77,7 +78,7 @@ export const useEventStore = defineStore('events', {
         this.eventsError = error instanceof Error ? error.message : '未知错误'
         // 出错时尝试读取本地 JSON
         try {
-          const res = await fetch('/data/events.json')
+          const res = await fetch(getPublicAssetUrl('data/events.json'))
           if (res.ok) {
             const fallback = await res.json()
             if (isValidArray(fallback)) this.events = fallback
@@ -115,7 +116,7 @@ export const useEventStore = defineStore('events', {
           localStorage.setItem(cacheKey, JSON.stringify(data))
           localStorage.setItem(cacheTimeKey, now.toString())
         } else {
-          const res = await fetch('/data/gallery.json')
+          const res = await fetch(getPublicAssetUrl('data/gallery.json'))
           if (res.ok) {
             const fallback = await res.json()
             if (isValidArray(fallback)) {
@@ -128,7 +129,7 @@ export const useEventStore = defineStore('events', {
       } catch (error) {
         this.galleryError = error instanceof Error ? error.message : '未知错误'
         try {
-          const res = await fetch('/data/gallery.json')
+          const res = await fetch(getPublicAssetUrl('data/gallery.json'))
           if (res.ok) {
             const fallback = await res.json()
             if (isValidArray(fallback)) this.galleryImages = fallback
