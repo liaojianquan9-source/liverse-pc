@@ -2,7 +2,7 @@
   <nav class="navbar" :class="{ scrolled: isScrolled }">
     <div class="container nav-container">
       <router-link to="/" class="logo">
-        <img src="/logo.png" alt="Liverse Hall" class="logo-img" />
+        <img :src="getPublicAssetUrl('logo.png')" alt="Liverse Hall" class="logo-img" />
       </router-link>
 
       <div class="nav-links" :class="{ open: mobileMenuOpen }">
@@ -101,6 +101,7 @@
 <script setup>
 import { ref, onMounted, onUnmounted } from 'vue'
 import { useRoute } from 'vue-router'
+import { getPublicAssetUrl } from '../utils/assets.js'
 
 const route = useRoute()
 defineProps({

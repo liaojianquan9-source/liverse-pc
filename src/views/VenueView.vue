@@ -44,14 +44,14 @@
           <div class="plan-item">
             <h3 class="plan-title">1F 平面布局图</h3>
             <div class="plan-image">
-              <img src="/北京_订场Web_01.png" alt="1F 平面布局图" loading="lazy" />
+              <img :src="getPublicAssetUrl('北京_订场Web_01.png')" alt="1F 平面布局图" loading="lazy" />
             </div>
             <p class="plan-desc">主厅平面布局，含观众席、舞台及后台区域分布</p>
           </div>
           <div class="plan-item">
             <h3 class="plan-title">舞台剖面图</h3>
             <div class="plan-image">
-              <img src="/北京_订场Web_02.png" alt="舞台剖面图" loading="lazy" />
+              <img :src="getPublicAssetUrl('北京_订场Web_02.png')" alt="舞台剖面图" loading="lazy" />
             </div>
             <p class="plan-desc">舞台灯光与设备剖面，展示专业演出系统配置</p>
           </div>
@@ -180,6 +180,7 @@ import { ref, computed, watch } from 'vue'
 import { useRoute } from 'vue-router'
 import Icon from '../components/Icon.vue'
 import { venueData } from '../data/venues.js'
+import { getPublicAssetUrl } from '../utils/assets.js'
 
 const route = useRoute()
 const currentCity = computed(() => route.query.city || 'beijing')

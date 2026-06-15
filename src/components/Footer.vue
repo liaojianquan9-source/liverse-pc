@@ -4,7 +4,7 @@
       <div class="footer-top">
         <div class="footer-brand">
           <div class="logo">
-            <img src="/logo.png" alt="Liverse Hall" class="logo-img" />
+            <img :src="getPublicAssetUrl('logo.png')" alt="Liverse Hall" class="logo-img" />
           </div>
           <p class="brand-desc">
             致力于为观众带来最精彩的现场演出体验
@@ -47,6 +47,8 @@
 </template>
 
 <script setup>
+import { getPublicAssetUrl } from '../utils/assets.js'
+
 function scrollTo(selector) {
   const el = document.querySelector(selector)
   if (el) {
