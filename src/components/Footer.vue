@@ -28,9 +28,9 @@
           </div>
           <div class="link-group">
             <h4>联系我们</h4>
-            <span>电话：021-1234-5678</span>
-            <span>邮箱：info@liversehall.com</span>
-            <span>地址：XX市XX区XX路XX号</span>
+            <span>电话：0512-59205222</span>
+            <span>场地：booking@liverse.com</span>
+            <span>品牌：cobrand@liverse.com</span>
           </div>
         </div>
       </div>

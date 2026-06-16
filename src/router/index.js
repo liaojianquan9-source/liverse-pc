@@ -6,6 +6,7 @@ import NewsView from '../views/NewsView.vue'
 import JobsView from '../views/JobsView.vue'
 import AccessView from '../views/AccessView.vue'
 import ContractView from '../views/ContractView.vue'
+import ContactView from '../views/ContactView.vue'
 
 const router = createRouter({
   history: createWebHashHistory(),
@@ -16,7 +17,8 @@ const router = createRouter({
     { path: '/news', name: 'news', component: NewsView },
     { path: '/jobs', name: 'jobs', component: JobsView },
     { path: '/access', name: 'access', component: AccessView },
-    { path: '/contract', name: 'contract', component: ContractView }
+    { path: '/contract', name: 'contract', component: ContractView },
+    { path: '/contact', name: 'contact', component: ContactView }
   ],
   scrollBehavior(to) {
     if (to.hash) {

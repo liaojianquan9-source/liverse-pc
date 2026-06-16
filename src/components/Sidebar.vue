@@ -52,7 +52,8 @@ const menuItems = [
   { label: '演出信息' },
   { label: '票务信息' },
   { label: '用户认证' },
-  { label: '预定记录' }
+  { label: '预定记录' },
+  { label: '联系我们', to: '/contact' }
 ]
 
 function close() {
